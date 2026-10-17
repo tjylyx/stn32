@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"pc13\startup_stm32f103xb.o"
+"pc13\main.o"
+"pc13\stm32f1xx_it.o"
+"pc13\stm32f1xx_hal_msp.o"
+"pc13\stm32f1xx_hal_gpio_ex.o"
+"pc13\stm32f1xx_hal.o"
+"pc13\stm32f1xx_hal_rcc.o"
+"pc13\stm32f1xx_hal_rcc_ex.o"
+"pc13\stm32f1xx_hal_gpio.o"
+"pc13\stm32f1xx_hal_dma.o"
+"pc13\stm32f1xx_hal_cortex.o"
+"pc13\stm32f1xx_hal_pwr.o"
+"pc13\stm32f1xx_hal_flash.o"
+"pc13\stm32f1xx_hal_flash_ex.o"
+"pc13\stm32f1xx_hal_exti.o"
+"pc13\system_stm32f1xx.o"
+--strict --scatter "pc13\pc13.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pc13.map" -o pc13\pc13.axf
